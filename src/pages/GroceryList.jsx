@@ -1,6 +1,6 @@
 import { useState } from "react";
-import GroceryItem from "./GroceryItem.jsx";
-import AddItemForm from "./AddItemForm.jsx";
+import GroceryItem from "../components/GroceryItem.jsx";
+import AddItemForm from "../components/AddItemForm.jsx";
 
 function GroceryList() {
   const [items, setItems] = useState([]);
@@ -17,6 +17,7 @@ function GroceryList() {
 
   return (
     <div>
+      <h1>Oasis Grocery List</h1>
       <h2>Grocery List</h2>
       <AddItemForm addItem={addItem} />
       {items.length === 0 ? (
